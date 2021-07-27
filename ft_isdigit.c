@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/27 16:27:57 by leolipes          #+#    #+#             */
-/*   Updated: 2021/07/27 16:28:00 by leolipes         ###   ########.fr       */
+/*   Created: 2021/07/27 16:26:05 by leolipes          #+#    #+#             */
+/*   Updated: 2021/07/27 16:26:09 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_strlen(char *str)
+int	fi_isdigit(int c)
 {
-	int	count;
-
-	count = 0;
-	while (str[count] != '\0')
+	if (c >= '0' && c <= '9')
 	{
-		count++;
+		return (1);
 	}
-	return (count);
+	return (0);
 }
