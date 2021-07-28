@@ -113,3 +113,29 @@
 //    }
 //    return(0);
 // }
+
+#include <stdio.h>
+#include <ctype.h>
+
+int	ft_isascii(int c);
+
+int	main(void)
+{
+	int var1 = 127;
+	int var2 = 58;
+	int var3 = 128;
+
+	if (ft_isascii(var1))
+		printf ("var1 = |%c| is a ascii character\n", var1);
+	else
+		printf ("var1 = |%c| is not a ascii character\n", var1);
+	if (ft_isascii(var2))
+		printf ("var2 = |%c| is a ascii character\n", var2);
+	else
+		printf ("var2 = |%c| is not a ascii character\n", var2);
+	if (ft_isascii(var3))
+		printf ("var3 = |%c| is a ascii character\n", var3);
+	else
+		printf ("var3 = |%c| is not a ascii character\n", var3);
+	return (0);
+}
