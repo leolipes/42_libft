@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/29 09:35:20 by leolipes          #+#    #+#             */
-/*   Updated: 2021/07/29 14:04:02 by leolipes         ###   ########.fr       */
+/*   Created: 2021/07/29 14:10:16 by leolipes          #+#    #+#             */
+/*   Updated: 2021/07/29 14:10:17 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	*ft_memset(void *str, int c, size_t n)
+void	ft_bzero(void *str, size_t n)
 {
-	int				i;
-	unsigned char	*ptr;
+	int		i;
+	char	*ptr;
 
 	i = 0;
-	ptr = (unsigned char *)str;
+	ptr = (char *)str;
 	while (i < n)
 	{
-		ptr[i] = (unsigned char)c;
+		ptr[i] = 0;
 		i++;
 	}
-	return (str);
 }
