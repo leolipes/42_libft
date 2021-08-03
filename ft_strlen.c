@@ -6,15 +6,15 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 16:27:57 by leolipes          #+#    #+#             */
-/*   Updated: 2021/07/29 14:39:42 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/03 13:03:56 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	while (str[count] != '\0')

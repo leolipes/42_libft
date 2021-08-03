@@ -6,15 +6,15 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 09:35:20 by leolipes          #+#    #+#             */
-/*   Updated: 2021/07/29 14:38:38 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/03 13:03:41 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	*ft_memset(void *str, int c, size_t n)
 {
-	unsigned int	i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	i = 0;
