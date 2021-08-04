@@ -6,7 +6,7 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 12:56:51 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/04 12:20:27 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/04 14:39:38 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@
 	int	ft_tolower(int c);
 	char *ft_strchr(const char *s, int c);
 	char *ft_strrchr(const char *s, int c);
+	int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
