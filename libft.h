@@ -6,7 +6,7 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 12:56:51 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/03 13:27:19 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/04 12:20:27 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,10 @@
 	void	*ft_memset(void *str, int c, size_t n);
 	size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 	size_t	ft_strlen(const char *str);
+	size_t	ft_strlcat(char *dest, const char *src, size_t size);
+	int ft_toupper(int c);
+	int	ft_tolower(int c);
+	char *ft_strchr(const char *s, int c);
+	char *ft_strrchr(const char *s, int c);
 
 #endif

@@ -6,9 +6,11 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 16:27:34 by leolipes          #+#    #+#             */
-/*   Updated: 2021/07/27 16:27:37 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/03 15:08:44 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
