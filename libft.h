@@ -6,7 +6,7 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 12:56:51 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/06 11:01:32 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/07 15:30:13 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 int		ft_atoi(const char *str);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 #endif
