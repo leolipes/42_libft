@@ -6,7 +6,7 @@
 #    By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/30 21:58:53 by leolipes          #+#    #+#              #
-#    Updated: 2021/08/09 11:37:50 by leolipes         ###   ########.fr        #
+#    Updated: 2021/08/09 12:18:05 by leolipes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,8 @@ SRCR	=	ft_isalpha.c \
 			ft_atoi.c \
 			ft_calloc.c \
 			ft_strdup.c \
-			ft_striteri.c 
+			ft_striteri.c \
+			ft_strmapi.c 
 
 OBJS	= ${SRCR:.c=.o}
 

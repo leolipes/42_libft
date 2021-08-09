@@ -6,7 +6,7 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 12:56:51 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/09 11:37:57 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/09 12:17:54 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,6 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
