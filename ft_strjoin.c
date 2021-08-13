@@ -6,7 +6,7 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 12:31:03 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/09 14:09:12 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/11 19:08:30 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size = ft_strlen(s1) + ft_strlen(s2);
 	str = malloc(sizeof(char) * size + 1);
 	if (!str)
-		return (0);
+		return (NULL);
 	while (s1[counts1])
 	{
 		str[counts1] = s1[counts1];

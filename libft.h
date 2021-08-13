@@ -6,13 +6,14 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 12:56:51 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/09 15:08:01 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/12 11:55:02 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -48,5 +49,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
+void	ft_putnbr_fd(int n, int fd);
+char	*ft_itoa(int n);
 
 #endif
