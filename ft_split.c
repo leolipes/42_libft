@@ -6,13 +6,13 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 13:18:10 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/14 13:21:12 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/14 14:21:37 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_get_nbrstr(char *s, char c)//cut this string
+static size_t	ft_get_nbrstr(char *s, char c)
 {
 	size_t		nbrstr;
 	short int	str_found;
