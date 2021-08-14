@@ -6,26 +6,26 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 13:18:10 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/14 12:07:50 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/14 13:21:12 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	get_size(char *s, char c)
+static size_t	ft_get_nbrstr(char *s, char c)//cut this string
 {
-	size_t		size;
+	size_t		nbrstr;
 	short int	str_found;
 
 	str_found = 0;
-	size = 0;
-	if (!s[0])
+	nbrstr = 0;
+	if (!s)
 		return (0);
 	while (1)
 	{
-		if ((*s == c || *s == '\0') && str_found)
+		if ((*s == c || *s == '\0') && str_found != 0)
 		{
-			size++;
+			nbrstr++;
 			str_found = 0;
 		}
 		else if (*s != c)
@@ -34,10 +34,10 @@ static size_t	get_size(char *s, char c)
 			break ;
 		s++;
 	}
-	return (size);
+	return (nbrstr);
 }
 
-static size_t	get_length(char *s, char c)
+static size_t	ft_get_length(char *s, char c)
 {
 	size_t	index;
 
@@ -50,45 +50,45 @@ static size_t	get_length(char *s, char c)
 	return (index);
 }
 
-static void	malloc_error(char **array, size_t size)
+static void	ft_malloc_error(char **matrix, size_t nbrstr)
 {
 	size_t	index;
 
 	index = 0;
-	while (index < size)
+	while (index < nbrstr)
 	{
-		if (array[index])
-			free(array[index]);
+		if (matrix[index])
+			free(matrix[index]);
 		index++;
 	}
-	free(array);
+	free(matrix);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	size;
+	size_t	nbrstr;
 	size_t	index;
-	char	**array;
+	char	**matrix;
 
 	index = 0;
 	if (!s)
 		return (0);
-	size = get_size((char *)s, c);
-	array = (char **)ft_calloc(size + 1, sizeof(char *));
-	if (!array)
+	nbrstr = ft_get_nbrstr((char *)s, c);
+	matrix = (char **)ft_calloc(nbrstr + 1, sizeof(char *));
+	if (!matrix)
 		return (0);
-	while (size--)
+	while (nbrstr--)
 	{
 		while (*s == c)
 			s++;
-		array[index] = ft_substr((char *)s, 0, get_length((char *)s, c));
-		if (!array[index])
+		matrix[index] = ft_substr((char *)s, 0, ft_get_length((char *)s, c));
+		if (!matrix[index])
 		{
-			malloc_error(array, index);
+			ft_malloc_error(matrix, index);
 			return (0);
 		}
-		s += get_length((char *)s, c);
+		s = s + ft_get_length((char *)s, c);
 		index++;
 	}
-	return (array);
+	return (matrix);
 }
