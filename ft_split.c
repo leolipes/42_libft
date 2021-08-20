@@ -6,7 +6,7 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 13:18:10 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/14 14:21:37 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/20 11:45:09 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,11 @@ char	**ft_split(char const *s, char c)
 
 	index = 0;
 	if (!s)
-		return (0);
+		return (NULL);
 	nbrstr = ft_get_nbrstr((char *)s, c);
 	matrix = (char **)ft_calloc(nbrstr + 1, sizeof(char *));
 	if (!matrix)
-		return (0);
+		return (NULL);
 	while (nbrstr--)
 	{
 		while (*s == c)
