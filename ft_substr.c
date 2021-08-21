@@ -6,7 +6,7 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 14:12:21 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/10 13:31:00 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/08/21 11:03:03 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
-	size_t	i;
 
-	i = 0;
+	if (!s)
+		return (NULL);
 	if (start > ft_strlen(s))
 	{
 		sub = malloc(sizeof(char));
@@ -29,13 +29,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (len > ft_strlen(&s[start]))
 		len = ft_strlen(&s[start]);
 	sub = malloc(sizeof(char) * len + 1);
-	if (!sub || !s)
+	if (!sub)
 		return (NULL);
-	while (len > i)
-	{
-		sub[i] = s[start + i];
-		i++;
-	}
-	sub[i] = 0;
+	sub[len] = 0;
+	while (len--)
+		sub[len] = s[len + start];
 	return (sub);
 }

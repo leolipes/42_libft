@@ -6,7 +6,7 @@
 #    By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/30 21:58:53 by leolipes          #+#    #+#              #
-#    Updated: 2021/08/19 17:16:05 by leolipes         ###   ########.fr        #
+#    Updated: 2021/08/21 17:03:58 by leolipes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,15 @@ SRCR	=	ft_isalpha.c \
 			ft_putnbr_fd.c \
 			ft_itoa.c \
 			ft_split.c \
-			ft_lstlast.c
+			ft_lstlast.c \
+			ft_lstsize.c \
+			ft_lstdelone.c \
+			ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstadd_back.c \
+			ft_lstiter.c \
+			ft_lstmap.c \
+			ft_lstclear.c
 
 OBJS	= ${SRCR:.c=.o}
 
@@ -69,3 +77,6 @@ fclean:		clean
 re:			fclean all
 
 .PHONY:		all clean fclean re
+
+bonus:	${OBJS}
+		ar rc ${NAME} ${OBJS}
