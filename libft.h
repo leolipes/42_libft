@@ -6,14 +6,13 @@
 /*   By: leolipes <leolipes@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 12:56:51 by leolipes          #+#    #+#             */
-/*   Updated: 2021/08/21 17:03:44 by leolipes         ###   ########.fr       */
+/*   Updated: 2021/09/09 15:43:28 by leolipes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
 
