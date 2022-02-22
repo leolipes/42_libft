@@ -13,7 +13,7 @@
 ### Functions from `<stdlib.h>` library
 
 * [`ft_atoi`](sources/ft_atoi.c)		- convert ASCII string to integer.
-* [`ft_calloc`](sources/ft_calloc.c)	- memory allocation.
+* [`ft_calloc`](sources/ft_calloc.c)	- clean memory allocation.
 
 ### Functions from `<strings.h>` library
 
